@@ -80,3 +80,46 @@
 
 # for animal in animals:
 #     animal.sound()
+
+##################################################################################################################################
+# # - `Vehicle` nomli **asosiy (parent) klass** yarat.
+# # - Undan `Car` va `Bike` nomli **ikki farzand klass** meros olsin.
+# # - Har bir klassda umumiy va o‘ziga xos metodlar bo‘lsin.
+# # - Klasslardan obyektlar yaratib, metodlarini chaqir.
+# class Vehicle:
+#     def __init__(self, turi):
+#         self.turi=turi
+
+#     def start(self):
+#         print(f"{self.turi} yurishni boshladi")
+#     def stop(self):
+#         print(f"{self.turi} yurishni to'xtatdi")
+        
+# class Car(Vehicle):
+#     def __init__(self, turi, model):
+#         super().__init__(turi)
+#         self.model=model
+    
+#     def eshik_ochilishi(self):
+#         print(f"{self.model} eshigi ochildi")
+
+# class Bike(Vehicle):
+#     def __init__(self, turi, bike_turi):
+#         super().__init__(turi)
+#         self.bike_turi=bike_turi
+
+#     def qongiroq(self):
+#         print(f"{self.bike_turi} velosipedining qo'ng'irog'i chalindi")
+
+# car1=Car("Avtomodil", "Lacetti Gentra")
+# bike1=Bike("Velosiped", "Phantom")
+# print("------------------------------------------")
+# car1.start()
+# car1.eshik_ochilishi()
+# car1.stop()
+# print("------------------------------------------")
+# bike1.start()
+# bike1.qongiroq()
+# bike1.stop()
+
+
