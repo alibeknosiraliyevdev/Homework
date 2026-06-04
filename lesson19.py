@@ -122,4 +122,62 @@
 # bike1.qongiroq()
 # bike1.stop()
 
+##################################################################################################################################
+# # 1. **Student** nomli asosiy (parent) klassini yarat. Ushbu klassda talabalar uchun umumiy ma'lumotlar bo'lsin: ism, yosh, va baho.
+# class Student:
+#     def __init__(self, ism, yosh, baho):
+#         self.ism=ism
+#         self.yosh=yosh
+#         self.baho=baho
 
+    # def info(self):
+#         print(f"Ism: {self.ism}\nYosh: {self.yosh}\nBaho: {self.baho}")
+
+# std1=Student("Ali", "20", "90")
+# std1.info()
+        
+# # 2. `age` va `grade` atributlarini **private** qilib belgilash. Faqat getter va setter metodlari 
+# # orqali bu atributlarga kirish mumkin bo'lsin.
+# class Student:
+#     def __init__(self, surname, name, age, grade):
+#         self.surname=surname
+#         self.name=name
+#         self.__age=age
+#         self.__grade=grade
+
+#     def info(self):
+#         print(self.surname,self.name)
+
+#     def get_age(self):
+#         return self.__age
+#     def get_grade(self):
+#         return self.__grade
+#     def set_age(self, age):
+#         self.__age=age
+#         return self.__age
+#     def set_grade(self, grade):
+#         self.__grade=grade
+#         return self.__grade
+
+# std1=Student("Nosiraliyev","Alibek", "20", "2-kurs")
+# std1.info()
+# print("Age:",std1.get_age())
+# print("Grade:",std1.get_grade())
+# print("------------------------------------------")
+# print("Age:",std1.set_age("21"))
+# print("Grade:",std1.set_grade("3-kurs"))
+
+# 3. Talaba ismini o'zgartirish uchun **public** metod yaratilsin (boshqa atributlar faqat getter 
+# va setter metodlari orqali o'zgartirilishi kerak).
+
+
+
+
+# 4. Shuningdek, **age** atributi faqat ijobiy qiymatlarni qabul qilishi kerak va **grade** atributi 
+# faqat 0 va 100 orasidagi qiymatlarni qabul qilishi kerak.
+
+
+
+
+
+# 5. Talaba haqida ma'lumotlarni chiqaruvchi metodlar va bu metodlarni sinovdan o'tkazish uchun bir nechta obyektlar yaratilsin.
