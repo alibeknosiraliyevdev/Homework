@@ -129,8 +129,7 @@
 #         self.ism=ism
 #         self.yosh=yosh
 #         self.baho=baho
-
-    # def info(self):
+#     def info(self):
 #         print(f"Ism: {self.ism}\nYosh: {self.yosh}\nBaho: {self.baho}")
 
 # std1=Student("Ali", "20", "90")
@@ -167,17 +166,76 @@
 # print("Age:",std1.set_age("21"))
 # print("Grade:",std1.set_grade("3-kurs"))
 
-# 3. Talaba ismini o'zgartirish uchun **public** metod yaratilsin (boshqa atributlar faqat getter 
-# va setter metodlari orqali o'zgartirilishi kerak).
+# # 3. Talaba ismini o'zgartirish uchun **public** metod yaratilsin (boshqa atributlar faqat getter 
+# # va setter metodlari orqali o'zgartirilishi kerak).
+# class Talaba:
+#     def __init__(self, ism, yosh, grade):
+#         self.__ism=ism
+#         self.__yosh=yosh
+#         self.__grade=grade
 
+#     def new_ism(self, yangi_ism):
+#         self.__ism=yangi_ism
+#     def get_ism(self):
+#         return self.__ism
+#     def get_yosh(self):
+#         return self.__yosh
+#     def get_grade(self):
+#         return self.__grade
+#     def set_age(self, yosh):
+#         self.__yosh=yosh
+#         return self.__yosh
+#     def set_grade(self, grade):
+#         self.__grade=grade
+#         return self.__grade
 
+# ta1=Talaba("Alibek", "20", "2-kurs")
+# ta1.new_ism("Asadbek")
+# print("Ism:", ta1.get_ism())
+# print("Yosh:", ta1.get_yosh())
+# print("Kurs:", ta1.get_grade())
 
+# # 4. Shuningdek, **age** atributi faqat ijobiy qiymatlarni qabul qilishi kerak va **grade** atributi 
+# # faqat 0 va 100 orasidagi qiymatlarni qabul qilishi kerak.
+# class Student:
+#     def __init__(self, name, age, grade):
+#         self.name=name
+#         self.age=age
+#         self.grade=grade
 
-# 4. Shuningdek, **age** atributi faqat ijobiy qiymatlarni qabul qilishi kerak va **grade** atributi 
-# faqat 0 va 100 orasidagi qiymatlarni qabul qilishi kerak.
-
-
-
+#     def get_name(self):
+#         return self.name
+#     def get_age(self):
+#         return self.age
+#     def get_grade(self):
+#         return self.grade
+    
+#     def set_age(self, new_age):
+#         self.age=new_age
+#         return self.age
+#     def set_grade(self, new_grade):
+#         self.grade=new_grade
+#         return self.grade
+    
+# std1=Student("Ali", "19", "2")
+# print("Ism:",std1.get_name())
+# print("Yosh:",std1.get_age())
+# print("Grade:",std1.get_grade())
+# print("-"*20)
+# n_age=int(input("Yangi yosh: "))
+# n_grade=int(input("Yangi grade: "))
+# print("-"*20)
+# if n_age >= 0:
+#     std1.set_age(n_age)
+#     if n_grade >0 and n_grade<100:
+#         std1.set_grade(n_grade)
+#         print("Ism:",std1.get_name())
+#         print("Yangi yosh:",std1.get_age())
+#         print("Yangi grade:",std1.get_grade())
+#     else:
+#         print("Grade 0 va 100 orasida emas!")
+# else:
+#     print("Manfiy yosh bo'lmaydi!")
 
 
 # 5. Talaba haqida ma'lumotlarni chiqaruvchi metodlar va bu metodlarni sinovdan o'tkazish uchun bir nechta obyektlar yaratilsin.
