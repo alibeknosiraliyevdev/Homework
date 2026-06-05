@@ -238,52 +238,51 @@
 #     print("Manfiy yosh bo'lmaydi!")
 
 
-# 5. Talaba haqida ma'lumotlarni chiqaruvchi metodlar va bu metodlarni sinovdan o'tkazish uchun bir nechta obyektlar yaratilsin.
-class Talaba:
-    def __init__(self, ism, yosh, grade):
-        self.ism=ism
-        self.yosh=yosh
-        self.grade=grade
+# # 5. Talaba haqida ma'lumotlarni chiqaruvchi metodlar va bu metodlarni sinovdan o'tkazish uchun bir nechta obyektlar yaratilsin.
+# class Talaba:
+#     def __init__(self, ism, yosh, grade):
+#         self.ism=ism
+#         self.yosh=yosh
+#         self.grade=grade
 
-    def get_ism(self):
-        return self.ism
-    def get_yosh(self):
-        return self.yosh
-    def get_grade(self):
-        return self.grade
+#     def get_ism(self):
+#         return self.ism
+#     def get_yosh(self):
+#         return self.yosh
+#     def get_grade(self):
+#         return self.grade
     
-    def set_ism(self, yangi_ism):
-        self.ism=yangi_ism
-        return self.ism
-    def set_age(self, yosh):
-        self.yosh=yosh
-        return self.yosh
-    def set_grade(self, grade):
-        self.grade=grade
-        return self.grade
+#     def set_ism(self, yangi_ism):
+#         self.ism=yangi_ism
+#         return self.ism
+#     def set_age(self, yosh):
+#         self.yosh=yosh
+#         return self.yosh
+#     def set_grade(self, grade):
+#         self.grade=grade
+#         return self.grade
     
-    def kurs(self):
-        if self.yosh >=20:
-            print(f"Ism:{self.ism}\nYosh:{self.yosh}\nKurs:{self.grade}")
-            print("-"*20)
-        else:
-            print("Bunday yoshdagi talabalar mavjud emas!")
-            print("-"*20)
+#     def kurs(self):
+#         if self.yosh >=20:
+#             print(f"Ism:{self.ism}\nYosh:{self.yosh}\nKurs:{self.grade}")
+#             print("-"*20)
+#         else:
+#             pass
 
-ta1=Talaba("Alibek", 20, "2-kurs")
-ta2=Talaba("Jamshidbek", 19, "1-kurs")
-ta3=Talaba("Amirbek", 21, "3-kurs")
-ta4=Talaba("Shodiyor", 19, "2-kurs")
+# ta1=Talaba("Alibek", 20, "2-kurs")
+# ta2=Talaba("Jamshidbek", 19, "1-kurs")
+# ta3=Talaba("Amirbek", 21, "3-kurs")
+# ta4=Talaba("Shodiyor", 19, "2-kurs")
 
-talabalar=[ta1,ta2,ta3,ta4]
+# talabalar=[ta1,ta2,ta3,ta4]
 
-for talaba in talabalar:
-    print("Ism:", talaba.get_ism())
-    print("Yosh:", talaba.get_yosh())
-    print("Kurs:", talaba.get_grade())
-    print("-"*20)
+# for talaba in talabalar:
+#     print("Ism:", talaba.get_ism())
+#     print("Yosh:", talaba.get_yosh())
+#     print("Kurs:", talaba.get_grade())
+#     print("-"*20)
 
-print("Saralangan talabalar\n")
-for talaba in talabalar:
-    talaba.kurs()
+# print("Saralangan talabalar\n")
+# for talaba in talabalar:
+#     talaba.kurs()
     
