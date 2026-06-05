@@ -132,7 +132,7 @@
 #     def info(self):
 #         print(f"Ism: {self.ism}\nYosh: {self.yosh}\nBaho: {self.baho}")
 
-# std1=Student("Ali", "20", "90")
+# std1=Student("Ali", 20, 90)
 # std1.info()
         
 # # 2. `age` va `grade` atributlarini **private** qilib belgilash. Faqat getter va setter metodlari 
@@ -158,7 +158,7 @@
 #         self.__grade=grade
 #         return self.__grade
 
-# std1=Student("Nosiraliyev","Alibek", "20", "2-kurs")
+# std1=Student("Nosiraliyev","Alibek", 20, "2-kurs")
 # std1.info()
 # print("Age:",std1.get_age())
 # print("Grade:",std1.get_grade())
@@ -189,7 +189,7 @@
 #         self.__grade=grade
 #         return self.__grade
 
-# ta1=Talaba("Alibek", "20", "2-kurs")
+# ta1=Talaba("Alibek", 20, "2-kurs")
 # ta1.new_ism("Asadbek")
 # print("Ism:", ta1.get_ism())
 # print("Yosh:", ta1.get_yosh())
@@ -217,7 +217,7 @@
 #         self.grade=new_grade
 #         return self.grade
     
-# std1=Student("Ali", "19", "2")
+# std1=Student("Ali", 19, 2)
 # print("Ism:",std1.get_name())
 # print("Yosh:",std1.get_age())
 # print("Grade:",std1.get_grade())
@@ -239,3 +239,51 @@
 
 
 # 5. Talaba haqida ma'lumotlarni chiqaruvchi metodlar va bu metodlarni sinovdan o'tkazish uchun bir nechta obyektlar yaratilsin.
+class Talaba:
+    def __init__(self, ism, yosh, grade):
+        self.ism=ism
+        self.yosh=yosh
+        self.grade=grade
+
+    def get_ism(self):
+        return self.ism
+    def get_yosh(self):
+        return self.yosh
+    def get_grade(self):
+        return self.grade
+    
+    def set_ism(self, yangi_ism):
+        self.ism=yangi_ism
+        return self.ism
+    def set_age(self, yosh):
+        self.yosh=yosh
+        return self.yosh
+    def set_grade(self, grade):
+        self.grade=grade
+        return self.grade
+    
+    def kurs(self):
+        if self.yosh >=20:
+            print(f"Ism:{self.ism}\nYosh:{self.yosh}\nKurs:{self.grade}")
+            print("-"*20)
+        else:
+            print("Bunday yoshdagi talabalar mavjud emas!")
+            print("-"*20)
+
+ta1=Talaba("Alibek", 20, "2-kurs")
+ta2=Talaba("Jamshidbek", 19, "1-kurs")
+ta3=Talaba("Amirbek", 21, "3-kurs")
+ta4=Talaba("Shodiyor", 19, "2-kurs")
+
+talabalar=[ta1,ta2,ta3,ta4]
+
+for talaba in talabalar:
+    print("Ism:", talaba.get_ism())
+    print("Yosh:", talaba.get_yosh())
+    print("Kurs:", talaba.get_grade())
+    print("-"*20)
+
+print("Saralangan talabalar\n")
+for talaba in talabalar:
+    talaba.kurs()
+    
