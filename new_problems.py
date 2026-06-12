@@ -201,4 +201,95 @@
 # rect=Rectangle(10,20)
 # print(rect)
 
-# 11-masala. Online Shop Product
+# # 11-masala. Online Shop Product
+# class Product:
+#     count=0
+#     def __init__(self, name, price):
+#         self.name=name
+#         self.__price=price
+#         Product.count += 1
+
+#     @property
+#     def price(self):
+#         return self.__price
+    
+#     @price.setter
+#     def price(self, narx):
+#         if narx > 0:
+#             self.__price=narx
+#         else:
+#             print("Narx manfiy bulmaydi!")
+
+#     @classmethod
+#     def from_discounted_price(cls, name, discounted_price, discounted_foiz):
+#         haqiqiy_price=discounted_price/(1-discounted_foiz/100)
+#         return cls(name, haqiqiy_price)
+    
+#     def info(self):
+#         print(f"Nomi: {self.name}")
+#         print(f"Narxi: {self.price}")
+
+# p1 = Product.from_discounted_price("Telefon",900,10)
+# p2 = Product.from_discounted_price("Noutbook",1000,20)
+
+# p1.info()
+# p2.info()
+# print("Mahsulotlar soni:", Product.count)
+
+# # 12-masala. Vector (Dunder Methods)
+# class Vector:
+#     def __init__(self, x, y):
+#         self.x=x
+#         self.y=y
+
+#     def __add__(self, other):
+#         return Vector(self.x + other.x, self.y + other.y)
+    
+#     def __sub__(self, other):
+#         return Vector(self.x - other.x, self.y - other.y)
+    
+#     def __str__(self):
+#         return  f"Vector({self.x}, {self.y})"
+    
+# obj1=Vector(2,3)
+# obj2=Vector(4,5)
+
+# print(obj1+obj2)
+# print(obj1-obj2)
+
+# # 13-masala. Library Management System
+# from abc import ABC, abstractmethod
+# class LibraryItem(ABC):
+#     @abstractmethod
+#     def borrow(self):
+#         pass
+
+# class Book(LibraryItem):
+#     def borrow(self):
+#         return 'Kitob 30 kun uchun olindi'
+    
+# class Magazine(LibraryItem):
+#     def borrow(self):
+#         return 'Jurnal 15 kun uchun olindi'
+    
+# class DVD(LibraryItem):
+#     def borrow(self):
+#         return 'DVD 7 kun uchun olindi'
+    
+# objects=[Book(), Magazine(), DVD()]
+# for object in objects:
+#     print(object.borrow())
+
+# # 14-masala. Smart Bank Account
+# class BankAccount:
+#     def __init__(self, balance):
+#         self.__balance=balance
+
+#     def __add__(self, other):
+#         return self.__balance + other.__balance
+        
+# acc1=BankAccount(100)
+# acc2=BankAccount(200)
+
+# print(acc1+acc2)
+
